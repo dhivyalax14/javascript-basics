@@ -1,4 +1,5 @@
 var a = 10;
+var a = 20;
 function square(x){
     var b = x;
     return b*b;
