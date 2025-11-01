@@ -1,0 +1,66 @@
+/* simple styles, you can expand or convert to Tailwind */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #9b96c9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.summary div {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.entry-form form > div {
+  margin: 10px 0;
+}
+
+.entry-form .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filters {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.entry-list table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.entry-list th, .entry-list td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .entry-list table, .entry-list th, .entry-list td {
+    font-size: 14px;
+  }
+}
